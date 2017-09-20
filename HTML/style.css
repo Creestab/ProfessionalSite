@@ -1,3 +1,32 @@
+*, *::after {
+  box-sizing: border-box; /*-- sets box math for all elements --*/
+}
+html{
+  background-color: #141516;
+}
+body {
+  width: 85%;  /*-- sets width of whole body to 85% --*/
+  margin: 0 auto;  /*-- centers the whole body --*/
+  font-family: 'Ariel', sans-serif;  /*-- sets font and fallback --*/
+}
+figure {
+  margin: 0 0 1em 0;  /*-- adds bottom margin to figures --*/
+  padding: 0;  /*-- removes padding from figures --*/
+}
+img {
+  width: 100%;  /*-- makes all images responsive --*/
+}
+article {
+  padding-right: 1em;  /*-- creates space to the container's right --*/
+}
+footer {
+  margin-top: 4em;  /*-- adds big space above the footer --*/
+  height: 55px;
+}
+p {
+  color: #EBF2F4
+}
+
 /* The side navigation menu */
 .nav {
     height: 100%; /* 100% Full-height */
@@ -38,15 +67,41 @@
 
 .container {
   display: inline-block;
+  align-self: center;
+  width: inherit;
+  height: 250px;
+  padding: 25px;
 }
 .container::after {
   clear: both;
   display: table;
 }
-.inner {
+.header {
+  border-radius: 20px;
+  border: 2px solid #AA2C2C;
+  padding: 15px;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.profPic{
+  float: left;
+  width: 20%;
+  height: auto;
+}
+.myName {
+  float: left;
+  font-size: 42;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  width: 30%;
+  height: auto;
+}
+.briefDesc {
+  border-radius: 20px;
+  border: 2px solid #AA2C2C;
+  padding: 15px;
   float: left;
   width: 50%;
-}
-.imageMini {
-  height: 25%
+  height: auto;
 }
